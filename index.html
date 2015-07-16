@@ -1,32 +1,27 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Listmon by ChelseaStats</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="listViewer">
+<head>
+    <title>Angular JS Getting Started</title>
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/filmController.js"></script>
+    <script src="js/seenController.js"></script>
+    <script src="js/macController.js"></script>
+    <script src="js/iosController.js"></script>
+    <script src="js/lister.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/github-light.css">
+<style>
+    body { font-family: monaco, consolas; font-size: 0.875em;}
+    .wrapper { width:900px; margin: auto auto; }
+</style> 
+</head>
+<body>
     <div class="wrapper">
-      <header>
-        <h1>Listmon</h1>
-        <p>List viewers example using Angular.JS</p>
-      </header>
-      <div class="wrapper">
-        <p>
-          <a href="#/film">Films</a> |
-          <a href="#/teams">Teams</a> |
-          <a href="#/mac">Mac Apps</a> |
-          <a href="#/ios">iOS Apps</a>
-        </p>
-      <div>
-      <footer>
-        <p class="view"><a href="https://github.com/ChelseaStats/ListMon">View the Project on GitHub <small>ChelseaStats/ListMon</small></a></p>
-      </footer>
-  </body>
+        <h1>List Viewer</h1>
+        <div ng-view></div>
+    </div>
+</body>
 </html>
