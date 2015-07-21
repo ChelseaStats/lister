@@ -183,6 +183,17 @@ footer {
   bottom:50px;
 }
 
+form {
+  float:right;
+  width:50%;
+}
+
+form:after { 
+  clear:both; 
+  height:0px; 
+}
+
+
 @media print, screen and (max-width: 960px) {
 
   div.wrapper {
