@@ -27,6 +27,15 @@
     <p>{{ error }}</p>
 
 
+      <form>
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon"><i class="fa fa-search"></i></div>
+            <input type="text" class="form-control" placeholder="Search Film" ng-model="searchFilm">
+          </div>      
+        </div>
+      </form>
+
     <table class="tablesorter" ng-repeat="datas in data" ng-hide="!$first">
         <thead>
         <tr>
@@ -37,7 +46,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr ng-repeat="(item,film) in datas | orderBy:sortType:sortReverse">
+        <tr ng-repeat="(item,film) in datas | filter:searchFilm">
 
             <td>{{ film.title }}</td>
             <td>{{ film.year }}</td>
