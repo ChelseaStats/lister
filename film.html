@@ -37,7 +37,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr ng-repeat="(item,film) in datas">
+        <tr ng-repeat="(item,film) in datas | orderBy:sortType:sortReverse">
 
             <td>{{ film.title }}</td>
             <td>{{ film.year }}</td>
