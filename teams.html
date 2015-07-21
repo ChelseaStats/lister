@@ -25,7 +25,16 @@
     </p>
 
     <p>{{ error }}</p>
-
+    
+    <form>
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon"><i class="fa fa-search"></i></div>
+            <input type="text" class="form-control" placeholder="Search Team" ng-model="searchTeam">
+          </div>      
+        </div>
+     </form>
+     
     <table class="tablesorter" ng-repeat="datas in data" ng-hide="!$first">
         <thead>
         <tr>
@@ -33,7 +42,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr ng-repeat="item in datas">
+        <tr ng-repeat="item in datas | filter:searchTeam">
             <td>{{ item.Name }}</td>
         </tr>
         </tbody>
