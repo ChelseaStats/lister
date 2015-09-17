@@ -48,10 +48,10 @@
         <tbody>
         <tr ng-repeat="(item,film) in datas | filter:searchFilm">
 
-            <td>{{ film.TITLE }}</td>
-            <td>{{ film.YEAR }}</td>
-            <td>{{ film.RATING }}</td>
-            <td><a href="http://imdb.com/title/{{ film.IMDB }}">{{ film.IMDB }}</a></td>
+            <td>{{ film.title }}</td>
+            <td>{{ film.release }}</td>
+            <td>{{ film.rating }}</td>
+            <td><a href="http://imdb.com/title/{{ film.imdb }}">{{ film.imdb }}</a></td>
         </tr>
         </tbody>
     </table>
