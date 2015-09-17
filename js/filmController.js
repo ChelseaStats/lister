@@ -15,7 +15,7 @@
             $scope.error = "An error occurred, please try again";
         };
 
-        lister.getFilms($scope.username).then(onFilmComplete, onError);
+        lister.getFilms().then(onFilmComplete, onError);
 
         $scope.listTitle = 'Film List';
     };
