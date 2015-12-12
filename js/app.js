@@ -1,5 +1,5 @@
 (function () {
-    var app = angular.module("listViewer", ["ngRoute"]);
+    var app = angular.module("listViewer", ['ngRoute']);
 
     app.config(function ($routeProvider) {
         $routeProvider
