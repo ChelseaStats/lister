@@ -8,7 +8,7 @@
         }
 
         var getFilms = function() {
-            return $http.get("https://raw.githubusercontent.com/ChelseaStats/TheChels.uk/master/_data/films.csv")
+            return $http.get("https://raw.githubusercontent.com/MatBenfield/TheChels.uk/master/_data/films.csv")
                 .then(function (response) {
                     return response.data;
                 });
